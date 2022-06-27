@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+
+  background-image: linear-gradient(
+      rgba(32, 64, 211, 0.5),
+      rgba(29, 71, 185, 0.5)
+    ),
+    url("./img/images-3.jpg");
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form {
+  background-color: rgba(7, 42, 156, 0.7);
+  padding: 50px 120px;
+  border-radius: 10px;
+}
+
+.logo > h1 {
+  font-weight: 600;
+  text-transform: uppercase;
+
+  color: #fff;
+  letter-spacing: 1px;
+  padding-bottom: 10px;
+}
+
+.logo > p {
+  font-weight: 500;
+  text-transform: ;
+
+  color: #fff;
+  letter-spacing: 1px;
+  padding-bottom: 10px;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+}
+
+.input > placeholder {
+  display: inline-block;
+  color: #fff;
+}
+
+.input > input {
+  background: none;
+  color: #fff;
+
+  border: none;
+  margin: 10px 0;
+
+  text-decoration: none;
+  border-bottom: 1px solid #fff;
+
+  outline: none;
+  height: 40px;
+}
+
+.button > button {
+  width: 250px;
+  padding: 10px 0;
+  text-align: center;
+
+  margin-top: 20px;
+  border-radius: 5px;
+  font-weight: bold;
+
+  border: 2px solid #fff;
+  background: transparent;
+  color: #fff;
+
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.button > button > span {
+  background: #fff;
+  height: 100%;
+  width: 0%;
+
+  border-radius: 5px;
+  position: absolute;
+
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+
+  transition: all 0.5s;
+}
+
+.button > button:hover span {
+  width: 100%;
+}
+
+.button > button:hover {
+  border: none;
+}
+
+.regester {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 10px;
+}
+
+.regester > p {
+  color: #fff;
+  font-size: 12px;
+}
+
+.regester > p > a {
+  display: inline-block;
+  color: rgb(243, 240, 240);
+  padding-left: 2px;
+
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.other {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  margin-top: 15px;
+}
+
+.other > p {
+  margin: 10px 0;
+  font-weight: 550;
+}
+
+.other > p > a {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+}
+
+.other > p:last-child {
+  font-weight: normal;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
